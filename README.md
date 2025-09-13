@@ -113,8 +113,8 @@ kubectl wait --for=condition=available --timeout=600s deployment/argocd-server -
    - **Cluster URL**: `https://kubernetes.default.svc`
    - **Namespace**: `default`
 
-![Pods Rodando](images/argoCD_1.png)
-![Pods Rodando](images/argoCD_2.png)
+![Configuração ArgoCD](images/argoCD_1.png)
+![Configuração ArgoCD](images/argoCD_2.png)
 
 #### Via CLI (Alternativa):
 
@@ -146,7 +146,7 @@ argocd app create online-boutique \
    kubectl get services
    ```
 
-![Pods Rodando](images/get_pods)
+![Pods Rodando](images/get_pods.png)
 
 
 ### Etapa 6: Acesso ao Frontend
@@ -159,7 +159,7 @@ kubectl port-forward service/frontend-external 8081:80
 open http://localhost:8081
 ```
 
-![Pods Rodando](images/frontend.png)
+![Aplicação Rodando](images/frontend.png)
 
 ##  Verificação e Monitoramento
 
