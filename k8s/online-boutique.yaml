@@ -339,7 +339,7 @@ spec:
           #   value: "" # This value would look like "http://123.123.123"
           resources:
             requests:
-              cpu: 100m
+              cpu: 50m
               memory: 64Mi
             limits:
               cpu: 200m
@@ -500,8 +500,8 @@ spec:
             port: 3550
         resources:
           requests:
-            cpu: 100m
-            memory: 64Mi
+            cpu: 25m
+            memory: 32Mi
           limits:
             cpu: 200m
             memory: 128Mi
@@ -745,8 +745,8 @@ spec:
           value: "1"
         resources:
           requests:
-            cpu: 300m
-            memory: 256Mi
+            cpu: 10m
+            memory: 100Mi
           limits:
             cpu: 500m
             memory: 512Mi
@@ -804,8 +804,8 @@ spec:
             port: 7000
         resources:
           requests:
-            cpu: 100m
-            memory: 64Mi
+            cpu: 25m
+            memory: 32Mi
           limits:
             cpu: 200m
             memory: 128Mi
@@ -877,8 +877,8 @@ spec:
             port: 50051
         resources:
           requests:
-            cpu: 100m
-            memory: 64Mi
+            cpu: 25m
+            memory: 32Mi
           limits:
             cpu: 200m
             memory: 128Mi
