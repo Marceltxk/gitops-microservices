@@ -1,6 +1,6 @@
 # GitOps na Prática - Kubernetes com ArgoCD
 
-## 📋 Visão Geral
+## Visão Geral
 
 Este projeto demonstra a implementação prática de GitOps usando Kubernetes e ArgoCD para automatizar o deploy de uma aplicação de microserviços. Utilizaremos o exemplo **Online Boutique** do Google Cloud Platform para simular um ambiente de produção cloud-native.
 
@@ -10,7 +10,7 @@ Executar um conjunto de microserviços (Online Boutique) em Kubernetes local usa
 
 ![Online Boutique](https://github.com/GoogleCloudPlatform/microservices-demo/raw/main/docs/img/online-boutique-frontend-1.png)
 
-## 🏗️ Arquitetura
+## Arquitetura
 
 O projeto implementa uma arquitetura GitOps onde:
 - **Git** é a fonte única da verdade para infraestrutura e aplicações
@@ -113,6 +113,9 @@ kubectl wait --for=condition=available --timeout=600s deployment/argocd-server -
    - **Cluster URL**: `https://kubernetes.default.svc`
    - **Namespace**: `default`
 
+![Pods Rodando](images/argoCD_1.png)
+![Pods Rodando](images/argoCD_2.png)
+
 #### Via CLI (Alternativa):
 
 ```bash
@@ -143,6 +146,9 @@ argocd app create online-boutique \
    kubectl get services
    ```
 
+![Pods Rodando](images/get_pods)
+
+
 ### Etapa 6: Acesso ao Frontend
 
 ```bash
@@ -152,6 +158,8 @@ kubectl port-forward service/frontend-external 8081:80
 # Acessar aplicação
 open http://localhost:8081
 ```
+
+![Pods Rodando](images/frontend.png)
 
 ##  Verificação e Monitoramento
 
